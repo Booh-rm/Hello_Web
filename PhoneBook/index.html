@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phone book</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Phone book</h1>
+
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+      <button type="submit">Add contact</button>
+    </form>
+
+    <ul id="contacts">
+      <li>
+        <span class="name">John Smith</span>
+        <span class="phone">555-555-5555</span>
+      </li>
+      <li>
+        <span class="name">Jane Doe</span>
+        <span class="phone">555-555-1234</span>
+      </li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
