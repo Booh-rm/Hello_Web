@@ -1,0 +1,89 @@
+body {
+  background-color: #F0F0F0;
+  animation-name: change-color;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change-color {
+  0% {
+    background-color: #F0F0F0;
+  }
+  50% {
+    background-color: #00FF00;
+  }
+  100% {
+    background-color: #FF00FF;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  .face {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+  margin: 50px auto;
+  }
+  
+  .eye {
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  background-color: white;
+  }
+  
+  .left-eye {
+  left: 50px;
+  }
+  
+  .right-eye {
+  right: 50px;
+  }
+  
+  .pupil {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: black;
+  }
+  
+  .left-eye .pupil {
+  transform: translateX(-20px);
+  }
+  
+  .right-eye .pupil {
+  transform: translateX(20px);
+  }
+  
+  .mouth {
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  position: absolute;
+  bottom: 60px;
+  left: 70px;
+  background-color: white;
+  transition: all 0.3s ease;
+  }
+  
+  .mouth.smiling {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 40px;
+  transform: translateY(0px);
+  }
