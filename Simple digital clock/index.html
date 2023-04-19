@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple digital clock</title>
+    <style>
+      #fondo {
+        background-image: url('https://images.pexels.com/photos/4021521/pexels-photo-4021521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        filter: blur(6px);
+      }
+      #clock {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 72px;
+        text-align: center;
+        margin-top: 50px;
+        color: #03A9F4;
+        text-shadow: 0px 0px 10px #03A9F4;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="fondo"></div>
+    <div id="clock"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
