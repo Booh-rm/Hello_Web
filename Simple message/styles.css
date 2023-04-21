@@ -1,0 +1,51 @@
+body {
+  background: linear-gradient(135deg, #b6b6b6, #ddd);
+}
+
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+  background-color: #000000;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://picsum.photos/300/400");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.cover:hover {
+  transform: scale(1.1);
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  color: #fff;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  margin: 20px 0 0;
+}
