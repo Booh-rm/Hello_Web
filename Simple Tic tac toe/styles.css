@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(to bottom right, #82bee9, #9eb4c4, #9ea0b0, #d68ad2);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+    
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+td {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid black;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+td.X {
+  color: blue;
+}
+
+td.O {
+  color: red;
+}
+
+#reset {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+ }
+  
+button {
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 40px;
+  }
+  
+  button:hover {
+    background-color: #5264ae;
+  }
+
+ 
+  
