@@ -1,0 +1,117 @@
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+
+#word-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 2rem auto;
+	width: 80%;
+	max-width: 800px;
+}
+
+#word-container div {
+	background-color: #fff;
+	border: 2px solid #000;
+	border-radius: 10px;
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+	color: #333;
+	letter-spacing: 2px;
+}
+
+#input-container {
+	margin: 2rem auto;
+	width: 80%;
+	max-width: 800px;
+}
+
+input[type="text"] {
+	padding: 0.5rem;
+	font-size: 2rem;
+	border: 2px solid #000;
+	border-radius: 10px;
+	text-align: center;
+	outline: none;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+	color: #333;
+	letter-spacing: 2px;
+	width: 4rem;
+}
+
+input[type="submit"] {
+	padding: 0.5rem 1rem;
+	font-size: 2rem;
+	border: none;
+	border-radius: 10px;
+	background-color: #00ff00;
+	color: #fff;
+	cursor: pointer;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+	transition: all 0.2s ease-in-out;
+	letter-spacing: 2px;
+}
+
+input[type="submit"]:hover {
+	background-color: #00cc00;
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+	transform: scale(1.1);
+}
+
+#message {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 2rem;
+}
+
+#hangman-container {
+	display: flex;
+	justify-content: center;
+	margin: 2rem auto;
+	width: 80%;
+	max-width: 800px;
+	position: relative;
+	height: 500px;
+}
+
+#hangman-container div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 500px;
+	width: 100%;
+	background-image: url('https://cdn.pixabay.com/photo/2018/01/20/17/04/planet-3091648_960_720.jpg');
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+}
+
+#hangman-container img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 500px;
+	width: 100%;
+	object-fit: cover;
+	filter: grayscale(100%) contrast(150%);
+	opacity: 0.8;
+	z-index: -1;
+}

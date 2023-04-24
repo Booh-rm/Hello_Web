@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Smple Hangman</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Hangman</h1>
+	<div id="word-container"></div>
+	<div id="input-container">
+		<form id="input-form">
+			<label for="letter">Ingresa una letra:</label>
+			<input type="text" id="letter" maxlength="1" autocomplete="off">
+			<input type="submit" value="Enviar">
+		</form>
+	</div>
+	<div id="message"></div>
+	<div id="hangman-container">
+		<canvas id="hangman" width="300" height="300"></canvas>
+		<div id="gallows"></div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
