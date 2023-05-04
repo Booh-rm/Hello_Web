@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.futuristic-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    background-color: #ff2e63;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px 0px rgba(255, 46, 99, 0.5);
+}
+
+.futuristic-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0px rgba(255, 46, 99, 0.7);
+}
+
+.futuristic-button:active {
+    transform: scale(0.9);
+    box-shadow: 0px 0px 5px 0px rgba(255, 46, 99, 0.5);
+}
+
+.black-background {
+    background-color: #000000;
+}
+
+.white-background {
+    background-color: #ffffff;
+}
+
+.red-background {
+    background-color: #ff0000;
+}
+
+.orange-background {
+    background-color: #ff7f00;
+}
+
+.yellow-background {
+    background-color: #ffff00;
+}
+
+.green-background {
+    background-color: #00ff00;
+}
+
+.cyan-background {
+    background-color: #00ffff;
+}
+
+.blue-background {
+    background-color: #0000ff;
+}
+
+.purple-background {
+    background-color: #8b00ff;
+}
+
+.pink-background {
+    background-color: #ff69b4;
+}
+
+.brown-background {
+    background-color: #8b4513;
+}
+
+.gray-background {
+    background-color: #808080;
+}
+
+.silver-background {
+    background-color: #c0c0c0;
+}
+
+.gold-background {
+    background-color: #ffd700;
+}
+
+.teal-background {
+    background-color: #008080;
+}
+
+.lime-background {
+    background-color: #00ff00;
+}
+
+.maroon-background {
+    background-color: #800000;
+}
+
+.navy-background {
+    background-color: #000080;
+}
