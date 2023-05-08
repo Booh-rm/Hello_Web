@@ -1,0 +1,35 @@
+body {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    color: #fff;
+    background-color: #0f0;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+button:hover {
+    background-color: #00cc00;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    background-color: #00aa00;
+    box-shadow: none;
+    text-shadow: none;
+}
